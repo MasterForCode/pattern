@@ -1,0 +1,23 @@
+package factory.abstractfactory;
+
+/**
+ * @author wb
+ * @date 2019/1/21
+ */
+public class LuxuryCarFactory implements CarFactory{
+
+    @Override
+    public Engine createEngine() {
+        return new LuxuryEngine();
+    }
+
+    @Override
+    public Seat createSeat() {
+        return new LuxurySeat();
+    }
+
+    @Override
+    public Tyre createTyre() {
+        return new LuxuryTyre();
+    }
+}
